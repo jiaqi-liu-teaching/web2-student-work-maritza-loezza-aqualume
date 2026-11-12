@@ -1,0 +1,338 @@
+/* Shared outer gutters. Full-width imagery and component interiors are separate. */
+body { --page-gutter: 72px; }
+@media (min-width: 601px) and (max-width: 1024px) {
+  body { --page-gutter: 40px; }
+}
+@media (max-width: 600px) {
+  body { --page-gutter: 20px; }
+}
+body > .nav,
+body > .footer,
+body > :is(.explore-aquarium,.maintenance,.marine-life,.jellyfish-section,.touch-section,.visit-expectation,.visit-info-section) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
+}
+body > .nav > .nav-logo { margin-left: 0; }
+body > .nav > .nav-links { margin-right: 0; }
+body :is(.maintenance-grid,.marine-grid,.jellyfish-layout,.touch-layout,.visit-expectation-content,.visit-info-inner,.footer-top,.footer-bottom) {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  transform: none;
+}
+body :is(.touch-copy,.marine-text) {
+  padding-left: 0;
+  transform: none;
+}
+body .explore-image img {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  aspect-ratio: 1;
+}
+body > :is(.hero,.exhibits-hero,.visit-hero) :is(.hero-content,.exhibits-hero-content,.visit-hero-overlay),
+body > .explore-hero .carousel-content {
+  box-sizing: border-box;
+  width: calc(100% - 2 * var(--page-gutter));
+  max-width: 820px;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+body .visit-content {
+  left: var(--page-gutter);
+  max-width: min(520px, calc(100% - 2 * var(--page-gutter)));
+}
+body .otter-text {
+  left: var(--page-gutter);
+  max-width: calc(100% - 2 * var(--page-gutter));
+}
+body > .visit-faq { max-width: none; }
+@media (min-width: 601px) {
+  body .inside-text {
+    max-width: none;
+    padding-left: var(--page-gutter);
+    padding-right: 28px;
+  }
+  body .visit-faq-overlay {
+    padding-left: var(--page-gutter);
+    padding-right: var(--page-gutter);
+  }
+  body .jellyfish-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  }
+  body .touch-layout {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  body .inside-text {
+    left: var(--page-gutter);
+    right: var(--page-gutter);
+  }
+  body .visit-faq-overlay {
+    box-sizing: border-box;
+    left: var(--page-gutter);
+    right: var(--page-gutter);
+    width: auto;
+    padding-inline: 0;
+    transform: translateY(-50%);
+  }
+}
+
+/* Visits information is anchored to the left content edge. */
+#visits-page .visit-info-inner {
+  text-align: left;
+}
+#visits-page :is(.visit-info-eyebrow,.visit-info-title,.visit-info-subtext) {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+#visits-page .visit-info-cards {
+  justify-items: start;
+}
+#visits-page .visit-info-cards > .visit-card {
+  justify-self: start;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+#visits-page .visit-card :is(.visit-card-icon,.visit-card-line) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#visits-page .visit-info-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+}
+#visits-page .visit-info-cards > .visit-card {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  justify-self: stretch;
+  margin-inline: 0;
+}
+@media (max-width: 600px) {
+  #visits-page .visit-info-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Mobile carousel dots sit below the text panel with a clear gap. */
+@media (max-width: 600px) {
+  #explore-page .explore-hero > .carousel-dots {
+    top: var(--carousel-dots-top, 85%);
+    bottom: auto;
+  }
+}
+
+/* The mobile otter panel sizes its section, rather than drifting off-screen. */
+@media (max-width: 600px) {
+  #exhibits-page > .otter-section {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    left: auto;
+    margin-left: 0;
+    padding: clamp(220px, 35svh, 320px) var(--page-gutter) 24px;
+    min-height: 0;
+    overflow: hidden;
+  }
+  #exhibits-page .otter-section > picture {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
+  #exhibits-page .otter-section .otter-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+  }
+  #exhibits-page .otter-section > .otter-text {
+    box-sizing: border-box;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 24px 20px;
+    transform: none;
+    overflow: visible;
+  }
+  #exhibits-page .otter-text :is(h2,.exhibit-description,.otter-highlights) {
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #exhibits-page .otter-section .otter-bg {
+    object-position: center top;
+  }
+  #exhibits-page .otter-section > .otter-text {
+    padding: 20px 18px;
+  }
+  #exhibits-page .otter-text h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  #exhibits-page .otter-text .exhibit-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  #exhibits-page .otter-text .otter-highlights {
+    gap: 8px;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  #exhibits-page .otter-highlights li {
+    padding: 10px 12px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+/* Visits expectation image fills the mobile content width. */
+@media (max-width: 600px) {
+  #visits-page .visit-expectation-content {
+    width: 100%;
+    max-width: none;
+    align-items: stretch;
+  }
+  #visits-page .visit-expectation-content .visit-expectation-img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-inline: 0;
+  }
+  #visits-page .visit-expectation-content .visit-expectation-text {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+}
+
+/* FAQ content owns section height; the photograph follows its changing size. */
+#visits-page > .visit-faq {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+}
+#visits-page .visit-faq > picture {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#visits-page .visit-faq .visit-faq-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+}
+#visits-page .visit-faq > .visit-faq-overlay {
+  box-sizing: border-box;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  margin: 0;
+  padding: 72px var(--page-gutter);
+  transform: none;
+}
+#visits-page .visit-faq .faq-item:last-child { margin-bottom: 0; }
+@media (max-width: 600px) {
+  #visits-page .visit-faq > .visit-faq-overlay {
+    padding-block: 48px;
+  }
+  #visits-page .visit-faq .faq-item {
+    max-width: none;
+  }
+}
+
+/* Keep FAQ content clear of the photograph's decorative edges. */
+#visits-page .visit-faq > .visit-faq-overlay {
+  padding-top: 120px;
+  padding-bottom: 96px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  #visits-page .visit-faq > .visit-faq-overlay {
+    padding-top: 96px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 600px) {
+  #visits-page .visit-faq > .visit-faq-overlay {
+    padding-top: 88px;
+    padding-bottom: 72px;
+  }
+}
+
+/* Extra breathing room between FAQ content and both curved edges. */
+#visits-page .visit-faq > .visit-faq-overlay {
+  padding-top: 152px;
+  padding-bottom: 128px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  #visits-page .visit-faq > .visit-faq-overlay {
+    padding-top: 128px;
+    padding-bottom: 112px;
+  }
+}
+@media (max-width: 600px) {
+  #visits-page .visit-faq > .visit-faq-overlay {
+    padding-top: 112px;
+    padding-bottom: 96px;
+  }
+}
+
+/* Preserve the complete original curved silhouette at any section height. */
+#visits-page .visit-faq .visit-faq-img {
+  transform: none;
+  object-fit: fill;
+  object-position: center;
+}
+
+/* Lift the mobile otter copy and keep the lower curve clear of the panel. */
+@media (max-width: 600px) {
+  #exhibits-page > .otter-section {
+    padding-top: clamp(104px, 16svh, 152px);
+    padding-bottom: 88px;
+    background: transparent;
+  }
+  #exhibits-page .otter-section .otter-bg {
+    object-position: center bottom;
+  }
+  #exhibits-page > .otter-section + .footer {
+    margin-top: 0;
+  }
+}

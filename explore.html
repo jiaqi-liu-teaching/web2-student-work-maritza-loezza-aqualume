@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="Maritza" name="author"/>
+<meta content="Aqualume Aquarium Website" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Aqualume</title>
+<link href="images/fish-icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles/main.css" rel="stylesheet"/>
+<link href="styles/tablet.css" media="(min-width: 601px) and (max-width: 1024px)" rel="stylesheet"/>
+<link href="styles/mobile.css" media="(max-width: 600px)" rel="stylesheet"/>
+<link href="styles/hero-viewport.css" rel="stylesheet"/>
+<link href="styles/page-spacing.css" rel="stylesheet"/>
+<link href="styles/ocean-motion.css" rel="stylesheet"/>
+</head>
+<body id="explore-page">
+<div aria-hidden="true" class="custom-cursor">
+<img alt="" data-alt-src="images/cursor-2.svg" data-default-src="images/cursor.svg" src="images/cursor.svg"/>
+</div>
+<!-- NAVIGATION BAR -->
+<nav class="nav">
+<a class="nav-logo" href="index.html">
+<img alt="Aqualume Logo" src="images/aqualume-logo.svg"/>
+</a>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu" class="nav-toggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="nav-links" id="primary-nav">
+<button aria-label="Close menu" class="close-button" type="button">X</button>
+<a href="explore.html">EXPLORE</a>
+<a href="exhibits.html">EXHIBITS</a>
+<a href="visits.html">VISITS</a>
+</div>
+</nav>
+<!-- HERO CAROUSEL -->
+<section class="explore-hero">
+<div class="carousel">
+<!-- SLIDE 1: JELLYFISH -->
+<div class="carousel-slide active">
+<picture>
+<source media="(max-width: 600px)" sizes="100vw" srcset="images/explore/mobile-carousel-1-480.webp 480w, images/explore/mobile-carousel-1-960.webp 960w, images/explore/mobile-carousel-1-1280.webp 1280w" type="image/webp"/>
+<img alt="Jellyfish glow zone" class="carousel-image" decoding="async" fetchpriority="high" height="1329" loading="eager" sizes="100vw" src="images/explore/carousel-1-img-2400.webp" srcset="images/explore/carousel-1-img-480.webp 480w, images/explore/carousel-1-img-960.webp 960w, images/explore/carousel-1-img-1600.webp 1600w, images/explore/carousel-1-img-2400.webp 2400w" width="2400"/>
+</picture>
+<div class="carousel-content">
+<p class="hero-eyebrow">EXPLORE THE AQUARIUM</p>
+<h1>Jellyfish Glow Zone</h1>
+<p>Watch glowing jellyfish drift through softly lit tanks in one of the aquarium’s most immersive spaces.</p>
+<a class="carousel-btn" href="exhibits.html#exhibit-01">View Jellyfish Zone</a>
+</div>
+</div>
+<!-- SLIDE 2: TOUCH EXPERIENCE -->
+<div class="carousel-slide">
+<picture>
+<source media="(max-width: 600px)" sizes="100vw" srcset="images/explore/mobile-carousel-2-480.webp 480w, images/explore/mobile-carousel-2-960.webp 960w, images/explore/mobile-carousel-2-1280.webp 1280w" type="image/webp"/>
+<img alt="Touch tank experience" class="carousel-image" decoding="async" height="1324" loading="lazy" sizes="100vw" src="images/explore/carousel-2-img-2400.webp" srcset="images/explore/carousel-2-img-480.webp 480w, images/explore/carousel-2-img-960.webp 960w, images/explore/carousel-2-img-1600.webp 1600w, images/explore/carousel-2-img-2400.webp 2400w" width="2400"/>
+</picture>
+<div class="carousel-content carousel-content-touch">
+<p class="hero-eyebrow">EXPLORE THE AQUARIUM</p>
+<h1>Touch Experience</h1>
+<p>A space where you can interact with marine life in a more personal way.</p>
+<a class="carousel-btn carousel-btn-purple" href="exhibits.html#exhibit-03">View Touch Zone</a>
+</div>
+</div>
+<!-- SLIDE 3: OTTER ENCOUNTER -->
+<div class="carousel-slide">
+<picture>
+<source media="(max-width: 600px)" sizes="100vw" srcset="images/explore/mobile-carousel-3-480.webp 480w, images/explore/mobile-carousel-3-960.webp 960w, images/explore/mobile-carousel-3-1280.webp 1280w" type="image/webp"/>
+<img alt="Otter encounter" class="carousel-image" decoding="async" height="1329" loading="lazy" sizes="100vw" src="images/explore/carousel-3-img-2400.webp" srcset="images/explore/carousel-3-img-480.webp 480w, images/explore/carousel-3-img-960.webp 960w, images/explore/carousel-3-img-1600.webp 1600w, images/explore/carousel-3-img-2400.webp 2400w" width="2400"/>
+</picture>
+<div class="carousel-content">
+<p class="hero-eyebrow">EXPLORE THE AQUARIUM</p>
+<h1>Otter Encounter</h1>
+<p>Watch one of the aquarium’s most playful animals in a setting designed for close-up viewing.</p>
+<a class="carousel-btn carousel-btn-blue" href="exhibits.html#exhibit-02">View Otters Zone</a>
+</div>
+</div>
+</div>
+<div aria-label="Hero carousel navigation" class="carousel-dots">
+<button aria-label="Show slide 1" class="carousel-dot active" type="button"></button>
+<button aria-label="Show slide 2" class="carousel-dot" type="button"></button>
+<button aria-label="Show slide 3" class="carousel-dot" type="button"></button>
+</div>
+</section>
+<!-- MARINE LIFE GRID -->
+<section class="marine-life">
+<div class="marine-grid">
+<!-- SEA TURTLE -->
+<div class="animal-card turtle-card" data-animal="turtle">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Sea turtle swimming underwater" decoding="async" height="1542" loading="lazy" sizes="(max-width: 600px) calc(100vw - 40px), 33vw" src="images/explore/sea-turtle-1-1648.webp" srcset="images/explore/sea-turtle-1-480.webp 480w, images/explore/sea-turtle-1-960.webp 960w, images/explore/sea-turtle-1-1600.webp 1600w, images/explore/sea-turtle-1-1648.webp 1648w" width="1648"/>
+<div class="card-label">
+<h3>Sea Turtle</h3>
+</div>
+</div>
+<div class="card-back">
+<p class="card-back-eyebrow">Fun Facts</p>
+<h3>Sea Turtle</h3>
+<ul class="card-back-list">
+<li>Sea turtles can hold their breath for long stretches while resting underwater.</li>
+<li>They often return to the same nesting beaches where they began life.</li>
+<li>Healthy seagrass beds and coral reefs help support their habitat.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- STARFISH -->
+<div class="animal-card starfish-card" data-animal="starfish">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Starfish underwater" decoding="async" height="1542" loading="lazy" sizes="(max-width: 600px) calc(100vw - 40px), 33vw" src="images/explore/star-fish-2-1648.webp" srcset="images/explore/star-fish-2-480.webp 480w, images/explore/star-fish-2-960.webp 960w, images/explore/star-fish-2-1600.webp 1600w, images/explore/star-fish-2-1648.webp 1648w" width="1648"/>
+<div class="card-label">
+<h3>Starfish</h3>
+</div>
+</div>
+<div class="card-back">
+<p class="card-back-eyebrow">Habitat</p>
+<h3>Starfish</h3>
+<ul class="card-back-list">
+<li>Starfish use tiny tube feet to move and hold onto rocks.</li>
+<li>Many species help keep ocean ecosystems balanced by feeding on shellfish.</li>
+<li>Clean water and stable tide zones are important for their survival.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- TEXT BLOCK -->
+<div class="marine-text">
+<p class="marine-eyebrow">Discover Fun Facts</p>
+<h2>Meet the Marine Animals Here</h2>
+<p>Get to know the animals you’ll see throughout Aqualume and beyond.</p>
+<p>Tap a card to flip it and learn fun facts, habitats, and quick details.</p>
+</div>
+<!-- JELLYFISH -->
+<div class="animal-card jellyfish-card" data-animal="jellyfish">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Jellyfish glowing underwater" decoding="async" height="1542" loading="lazy" sizes="(max-width: 600px) calc(100vw - 40px), 33vw" src="images/explore/jelly-fish-3-1648.webp" srcset="images/explore/jelly-fish-3-480.webp 480w, images/explore/jelly-fish-3-960.webp 960w, images/explore/jelly-fish-3-1600.webp 1600w, images/explore/jelly-fish-3-1648.webp 1648w" width="1648"/>
+<div class="card-label">
+<h3>Jellyfish</h3>
+</div>
+</div>
+<div class="card-back">
+<p class="card-back-eyebrow">Fun Facts</p>
+<h3>Jellyfish</h3>
+<ul class="card-back-list">
+<li>Jellyfish have no brain or bones, but they still move with the currents.</li>
+<li>Some species glow because of bioluminescent proteins in their bodies.</li>
+<li>Gentle lighting and careful tank flow help recreate their environment.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- RAY -->
+<div class="animal-card ray-card" data-animal="ray">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Ray swimming underwater" decoding="async" height="1542" loading="lazy" sizes="(max-width: 600px) calc(100vw - 40px), 33vw" src="images/explore/sting-ray-4-1648.webp" srcset="images/explore/sting-ray-4-480.webp 480w, images/explore/sting-ray-4-960.webp 960w, images/explore/sting-ray-4-1600.webp 1600w, images/explore/sting-ray-4-1648.webp 1648w" width="1648"/>
+<div class="card-label">
+<h3>Ray</h3>
+</div>
+</div>
+<div class="card-back">
+<p class="card-back-eyebrow">Quick Facts</p>
+<h3>Ray</h3>
+<ul class="card-back-list">
+<li>Rays are closely related to sharks and have skeletons made of cartilage.</li>
+<li>Their flattened bodies help them glide smoothly across the ocean floor.</li>
+<li>Sandy habitats and calm shallow waters are common places to spot them.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- CLOWNFISH -->
+<div class="animal-card clownfish-card" data-animal="clownfish">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Clownfish swimming near coral" decoding="async" height="1542" loading="lazy" sizes="(max-width: 600px) calc(100vw - 40px), 33vw" src="images/explore/clown-fish-5-1648.webp" srcset="images/explore/clown-fish-5-480.webp 480w, images/explore/clown-fish-5-960.webp 960w, images/explore/clown-fish-5-1600.webp 1600w, images/explore/clown-fish-5-1648.webp 1648w" width="1648"/>
+<div class="card-label">
+<h3>Clownfish</h3>
+</div>
+</div>
+<div class="card-back">
+<p class="card-back-eyebrow">Habitat</p>
+<h3>Clownfish</h3>
+<ul class="card-back-list">
+<li>Clownfish live among sea anemones and gain protection from their stinging tentacles.</li>
+<li>They communicate with pops and clicks made by their bodies.</li>
+<li>Coral reef conservation helps protect clownfish homes in the wild.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- OTTER -->
+<div class="animal-card otter-card" data-animal="otter">
+<div class="card-inner">
+<div class="card-front">
+<picture>
+<source media="(max-width: 600px)" sizes="100vw" srcset="images/explore/mobile-sea-otter-img-480.webp 480w, images/explore/mobile-sea-otter-img-960.webp 960w, images/explore/mobile-sea-otter-img-1256.webp 1256w" type="image/webp"/>
+<img alt="Sea otter floating in water" decoding="async" height="912" loading="lazy" sizes="(max-width: 600px) calc(100vw - 40px), 50vw" src="images/explore/sea-otter-6-2400.webp" srcset="images/explore/sea-otter-6-480.webp 480w, images/explore/sea-otter-6-960.webp 960w, images/explore/sea-otter-6-1600.webp 1600w, images/explore/sea-otter-6-2400.webp 2400w" width="2400"/>
+</picture>
+<div class="card-label">
+<h3>Sea Otter</h3>
+</div>
+</div>
+<div class="card-back">
+<p class="card-back-eyebrow">Fun Facts</p>
+<h3>Sea Otter</h3>
+<div class="otter-back-grid">
+<div class="otter-back-panel">
+<p class="otter-back-title">Habitat</p>
+<p>Sea otters live in coastal kelp forests and cold nearshore waters.</p>
+</div>
+<div class="otter-back-panel">
+<p class="otter-back-title">Diet</p>
+<p>They eat sea urchins, crabs, clams, mussels, and other shellfish.</p>
+</div>
+<div class="otter-back-panel">
+<p class="otter-back-title">Special Fact</p>
+<p>Sea otters use rocks as tools to crack open hard shells.</p>
+</div>
+<div class="otter-back-panel">
+<p class="otter-back-title">Ocean Role</p>
+<p>By keeping sea urchin numbers down, otters help kelp forests stay healthy.</p>
+</div>
+<div class="otter-back-panel">
+<p class="otter-back-title">Warmth</p>
+<p>They stay warm with incredibly dense fur instead of a thick layer of blubber.</p>
+</div>
+<div class="otter-back-panel">
+<p class="otter-back-title">Resting</p>
+<p>Sea otters wrap themselves in kelp so they do not drift away while sleeping.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-top">
+<div class="footer-left">
+<a class="footer-logo" href="index.html">
+<img alt="Aqualume Logo" src="images/aqualume-logo-purple.svg"/>
+</a>
+<p class="footer-tagline">Dive Into Wonder...</p>
+</div>
+<div class="footer-links">
+<a href="explore.html">Explore</a>
+<a href="exhibits.html">Exhibits</a>
+<a href="visits.html">Visits</a>
+</div>
+<div class="footer-subscribe">
+<h3>STAY UPDATED WITH AQUALUME</h3>
+<div class="subscribe-form">
+<input aria-label="Email" id="footer-email" placeholder="Enter your email" type="email"/>
+<button>Subscribe</button>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Aqualume. All rights reserved.</p>
+</div>
+</footer>
+<button aria-label="Back to top" class="back-to-top" type="button">↑</button>
+<script src="scripts/main.js"></script>
+<script src="scripts/ocean-motion.js"></script>
+</body>
+</html>

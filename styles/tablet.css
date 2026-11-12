@@ -1,0 +1,758 @@
+/* GLOBAL */
+body {
+  font-size: 15px;
+}
+
+/* NAVIGATION */
+.nav {
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 30px;
+  padding-bottom: 18px;
+}
+
+.nav-logo img {
+  width: 220px;
+}
+
+.nav-logo {
+  margin-left: 8px;
+  transform: translateY(6px);
+}
+
+.nav-links {
+  gap: 22px;
+  margin-right: 14px;
+  transform: translateY(6px);
+}
+
+.nav-links a {
+  font-size: 13px;
+}
+
+/* HERO SECTIONS */
+.hero,
+.explore-hero,
+.visit-hero,
+.exhibits-hero {
+  min-height: 760px;
+}
+
+.hero-image,
+.visit-hero-img,
+.exhibits-hero-img,
+.carousel-image {
+  width: 100%;
+  min-height: 760px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-content,
+.carousel-content,
+.visit-hero-overlay,
+.exhibits-hero-content {
+  width: min(720px, calc(100% - 64px));
+  padding: 26px 28px 30px;
+}
+
+.hero-content {
+  top: 46%;
+}
+
+.carousel-content {
+  top: 45%;
+}
+
+.visit-hero-overlay {
+  top: 47%;
+}
+
+.exhibits-hero-content {
+  top: 42%;
+}
+
+.hero h1,
+.carousel-content h1,
+.visit-hero-overlay h1,
+.exhibits-hero-content h1 {
+  font-size: 42px;
+}
+
+.hero-eyebrow,
+.visit-eyebrow {
+  font-size: 13px;
+  letter-spacing: 1.4px;
+}
+
+.hero-text,
+.visit-text,
+.inside-text p,
+.explore-content p {
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+/* HOME PAGE */
+.inside-aqualume {
+  margin-top: -110px;
+  min-height: 748px;
+}
+
+.inside-text {
+  padding: 76px 48px 76px 96px;
+  max-width: 520px;
+  align-self: center;
+  transform: translateY(-66px);
+}
+
+.inside-text h2,
+.explore-content h2,
+.maintenance h2,
+.visit-content h2,
+.marine-text h2,
+.visit-expectation-text h2,
+.visit-info-title,
+.visit-faq h2,
+.jellyfish-copy h2,
+.touch-copy h2,
+.otter-text h2 {
+  font-size: 32px;
+}
+
+.inside-text p {
+  max-width: 620px;
+}
+
+.inside-image {
+  left: 0;
+  right: 0;
+  background: transparent;
+}
+
+.inside-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 76% 48%;
+}
+
+.explore-aquarium {
+  gap: 38px;
+  margin-top: -46px;
+  padding: 24px 42px 52px;
+}
+
+.explore-image img {
+  width: 430px;
+  height: 430px;
+}
+
+.explore-content {
+  max-width: 440px;
+}
+
+.explore-content p {
+  max-width: 440px;
+  margin-bottom: 18px;
+}
+
+.maintenance {
+  padding: 44px 34px 44px;
+}
+
+.maintenance-grid {
+  gap: 34px;
+}
+
+.maintenance-icon {
+  width: 178px;
+  height: 178px;
+  margin-bottom: 28px;
+}
+
+.visit {
+  margin-top: 26px;
+}
+
+.visit-image {
+  width: 100%;
+  min-height: 700px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.visit-content {
+  left: 8%;
+  top: 52%;
+  max-width: 360px;
+}
+
+.visit-content h2 {
+  font-size: 32px;
+}
+
+.visit-text {
+  max-width: 340px;
+}
+
+/* EXPLORE PAGE */
+.carousel-dots {
+  bottom: 118px;
+  gap: 14px;
+}
+
+.carousel-dot {
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-content h1 {
+  font-size: 42px;
+}
+
+.marine-life {
+  padding: 92px 42px 40px;
+}
+
+.marine-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas:
+    "turtle starfish text"
+    "jellyfish ray clownfish"
+    "otter otter otter";
+  gap: 30px;
+  max-width: 100%;
+}
+
+.marine-text {
+  max-width: 100%;
+  padding-left: 0;
+  padding-top: 8px;
+  justify-content: center;
+}
+
+.marine-text h2 {
+  max-width: 290px;
+  margin-bottom: 14px;
+  font-size: 28px;
+}
+
+.marine-text p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  max-width: 280px;
+}
+
+.card-label {
+  left: 16px;
+  bottom: 12px;
+  padding: 7px 12px;
+}
+
+.card-label h3 {
+  font-size: 15px;
+}
+
+.animal-card {
+  perspective: none;
+}
+
+.card-inner {
+  transform-style: flat;
+}
+
+.otter-back-grid {
+  gap: 18px;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(242, 232, 213, 0.16);
+}
+
+.otter-back-panel {
+  padding: 13px 13px 14px;
+  border-radius: 16px;
+}
+
+.otter-back-title {
+  font-size: 12px;
+}
+
+.otter-back-panel p:last-child {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.card-back {
+  gap: 12px;
+  padding: 18px 18px 20px;
+  overflow: hidden;
+  transform: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 220ms ease, visibility 220ms ease;
+  box-shadow: none;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
+.card-back h3 {
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.card-back-eyebrow {
+  padding: 7px 11px;
+}
+
+.card-back-list {
+  padding: 14px 14px 0 22px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.card-back-list li + li {
+  margin-top: 8px;
+}
+
+.starfish-card .card-back,
+.clownfish-card .card-back {
+  padding-bottom: 28px;
+}
+
+.starfish-card .card-back-list,
+.clownfish-card .card-back-list {
+  max-width: none;
+  padding: 16px 18px 0 20px;
+  line-height: 1.38;
+}
+
+.otter-card .card-back {
+  padding: 20px 22px 22px;
+}
+
+.card-front {
+  transition: opacity 220ms ease, visibility 220ms ease, transform 0.2s ease;
+}
+
+.animal-card.is-flipped .card-inner {
+  transform: none;
+}
+
+.animal-card.is-flipped .card-front {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animal-card.is-flipped .card-back {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-back::before,
+.card-back::after,
+.starfish-card .card-back::after,
+.clownfish-card .card-back::after {
+  display: none;
+}
+
+/* EXHIBITS PAGE */
+.exhibits-hero-content {
+  width: min(700px, calc(100% - 64px));
+  padding: 32px 34px 36px;
+}
+
+.exhibits-hero-content h1 {
+  font-size: 46px;
+}
+
+.exhibits-subtext {
+  max-width: 480px;
+  font-size: 15px;
+}
+
+.exhibit-section {
+  padding: 82px 42px 84px;
+}
+
+.jellyfish-section {
+  padding-top: 64px;
+}
+
+.jellyfish-layout {
+  grid-template-columns: minmax(320px, 380px) minmax(330px, 1fr);
+  gap: 42px;
+  align-items: center;
+  transform: translateX(0);
+}
+
+.jellyfish-copy {
+  margin-left: 20px;
+  max-width: 360px;
+  padding-top: 30px;
+}
+
+.jellyfish-copy h2 {
+  font-size: 32px;
+}
+
+.jellyfish-copy .exhibit-description,
+.exhibit-simple-list li,
+.touch-highlights li,
+.otter-highlights li {
+  font-size: 15px;
+}
+
+.jellyfish-copy .exhibit-description,
+.touch-copy .exhibit-description,
+.otter-text .exhibit-description {
+  max-width: 100%;
+}
+
+.jellyfish-visuals {
+  min-height: 560px;
+}
+
+.jellyfish-image-small {
+  display: none;
+}
+
+.jellyfish-image-large {
+  top: 92px;
+  right: 24px;
+  left: auto;
+  width: 452px;
+  height: 452px;
+  transform: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.jellyfish-dot-coral {
+  display: none;
+}
+
+.jellyfish-dot-purple {
+  display: none;
+}
+
+.touch-section {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.touch-layout {
+  grid-template-columns: minmax(360px, 1fr) minmax(280px, 340px);
+  gap: 42px;
+  transform: translateX(0);
+}
+
+.touch-copy {
+  max-width: 340px;
+  transform: translateX(-28px);
+}
+
+.exhibit-simple-list,
+.touch-highlights,
+.otter-highlights {
+  max-width: 100%;
+}
+
+.touch-visual {
+  min-height: 500px;
+  transform: none;
+}
+
+.touch-circle-accent {
+  left: 8px;
+  top: 62px;
+  width: 128px;
+  height: 128px;
+}
+
+.touch-image-frame {
+  max-width: 470px;
+}
+
+.otter-bg {
+  min-height: 700px;
+  width: 100vw;
+  max-width: none;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  object-position: center;
+}
+
+.otter-text {
+  top: 50%;
+  left: 54px;
+  transform: translateY(-50%);
+  width: 510px;
+  padding: 28px 28px 30px;
+  min-height: 500px;
+  position: absolute;
+}
+
+.otter-text h2 {
+  margin-bottom: 14px;
+  max-width: 100%;
+  font-size: 30px;
+}
+
+.otter-text .exhibit-description {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.otter-highlights {
+  gap: 10px;
+}
+
+.otter-highlights li {
+  padding: 12px 14px;
+}
+/* VISITS PAGE */
+.visit-hero-overlay {
+  width: min(680px, calc(100% - 64px));
+  padding: 32px 34px 40px;
+}
+
+.visit-hero-overlay h1 {
+  font-size: 46px;
+}
+
+.visit-subtext {
+  max-width: 440px;
+  font-size: 15px;
+}
+
+.visit-expectation {
+  padding: 42px 42px 66px;
+}
+
+.visit-expectation-content {
+  gap: 42px;
+  align-items: center;
+}
+
+.visit-expectation-img {
+  max-width: 470px;
+}
+
+.visit-expectation-text {
+  max-width: 440px;
+  transform: translateY(34px);
+}
+
+.visit-expectation-text p,
+.visit-expectation-list li {
+  font-size: 15px;
+}
+
+.visit-expectation-text p {
+  max-width: 100%;
+  line-height: 1.66;
+}
+
+.visit-expectation-list {
+  padding-left: 24px;
+}
+
+.visit-info-section {
+  padding: 48px 34px 84px;
+}
+
+.visit-info-cards {
+  gap: 22px;
+}
+
+.visit-card {
+  padding: 20px 20px 18px;
+  min-height: 176px;
+}
+
+.visit-card-icon {
+  width: 38px;
+  height: 38px;
+}
+
+.visit-card-line {
+  width: 62px;
+  margin-bottom: 14px;
+}
+
+.visit-card h3 {
+  font-size: 17px;
+}
+
+.visit-card p,
+.visit-list li {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.visit-faq {
+  margin-top: 28px;
+}
+
+.visit-faq-img {
+  width: 100%;
+  min-height: 980px;
+  object-fit: cover;
+  object-position: center 36%;
+}
+
+.visit-faq-overlay {
+  top: 50%;
+  left: 52%;
+  width: calc(100% - 96px);
+  padding: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.visit-faq .visit-label {
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.visit-faq h2 {
+  max-width: 360px;
+  text-align: left;
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.visit-faq-intro {
+  margin-bottom: 28px;
+  max-width: 520px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+.faq-item {
+  max-width: 540px;
+  margin-bottom: 14px;
+}
+
+.faq-question {
+  padding: 20px 24px;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.faq-question-text {
+  max-width: 410px;
+  text-wrap: balance;
+}
+
+.faq-icon {
+  font-size: 18px;
+}
+
+.faq-answer {
+  padding: 18px 24px 20px;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.marine-text {
+  padding-top: 0;
+}
+
+.card-back {
+  overflow-y: auto;
+}
+
+.marine-text h2 {
+  max-width: 220px;
+  font-size: 28px;
+}
+
+.otter-back-grid {
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.otter-back-panel {
+  padding: 11px 11px 12px;
+}
+
+.otter-back-title {
+  font-size: 11px;
+}
+
+.otter-back-panel p:last-child {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: -28px;
+  padding: 0 42px 34px;
+}
+
+#exhibits-page .footer,
+#visits-page .footer {
+  margin-top: -56px;
+}
+
+#visits-page .footer {
+  margin-top: -12px;
+}
+
+.footer-top {
+  grid-template-columns: 1fr auto;
+  gap: 25px;
+  align-items: center;
+}
+
+.footer-left {
+  justify-self: start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.footer-logo {
+  transform: translateY(-12px);
+  margin-left: -4px;
+}
+
+.footer-logo img {
+  width: 236px;
+}
+
+.footer-links {
+  display: none;
+}
+
+.footer-subscribe {
+  grid-column: 2;
+  justify-self: end;
+  align-self: center;
+  margin-top: 18px;
+  padding-left: 0;
+}
+
+.footer-subscribe h3 {
+  margin-bottom: 12px;
+}
+
+.subscribe-form {
+  flex-wrap: nowrap;
+}
+
+.subscribe-form input {
+  width: 200px;
+}
